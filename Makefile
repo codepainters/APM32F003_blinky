@@ -3,8 +3,8 @@
 # GNU GCC toolkit settings
 #
 
-ARM_TOOLKIT_PATH ?=
-CROSS_COMPILE = $(TOOLKIT_PATH)arm-none-eabi-
+ARM_TOOLCHAIN_PATH ?=
+CROSS_COMPILE = $(ARM_TOOLCHAIN_PATH)arm-none-eabi-
 AS = $(CROSS_COMPILE)gcc
 CC = $(CROSS_COMPILE)gcc
 LD = $(CROSS_COMPILE)gcc
