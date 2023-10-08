@@ -32,7 +32,7 @@ flashing and debugging. Support for `APM32F00x` is not yet included in the offic
 I have found [this patch](https://review.openocd.org/gitweb?p=openocd.git;a=commitdiff;h=ea291b5ff9bb316cdf2e4aa50e0c58642b048cef), 
 fixed it to apply cleanly on top of the current code and actually compile, it seems to work fine. 
 You can grab patched `OpenOCD` from [my forked repo](https://github.com/codepainters/openocd), 
-from the `apm32` branch (you have to compile it yourself, of course).
+from the `apm32` branch (you have to [compile it](https://learn.adafruit.com/programming-microcontrollers-using-openocd-on-raspberry-pi/compiling-openocd) yourself, of course).
 
 For `J-Link` probe you can use [openocd.cfg](openocd.cfg) directly:
 ```
@@ -51,7 +51,11 @@ In order to build the sample project:
 
 ### Test hardware
 
-All my test were performed with a bare minimum circuit done on the breadboard. The only necessary connections are:
+All my test were performed with a bare minimum circuit done on the breadboard. 
+
+![bboard.jpg](bboard.jpg)
+
+The only necessary connections are:
 
 * +5V to `VDD` (pin 9), ground to `VSS` (pin 7),  some decoupling capacitor
 * 1uF capacitor between `VCAP` (pin 8) and ground
