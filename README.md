@@ -44,8 +44,7 @@ For other probes tweak the first commandi in the `openocd.cfg` file accordingly.
 
 In order to build the sample project:
 
-* set `ARM_TOOLCHAIN_PATH` environment variable to point to the directory 
-  containing `arm-none-eabi-gcc` and other binaries, or set your `PATH` accordingly.
+* set `ARM_TOOLCHAIN_PATH` environment variable to point to the directory containing `arm-none-eabi-gcc` and other binaries, or set your `PATH` accordingly (on Ubuntu you can just `apt-get install gcc-arm-none-eabi gdb-multiarch`).
 * run `make` - if all is OK, you should get `out/blinky.elf` file.
 * flash it to your test board, e.g. with `OpenOCD` and `gdb`, issuing `load` command in `gdb`.
 
